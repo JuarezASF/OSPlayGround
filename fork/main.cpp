@@ -13,7 +13,7 @@ void log(string msg){
 int main(int argc, char **argv){
     int pid, uid, ppid, euid;
 
-    int qtd = 10;
+    int qtd = 3;
     tag = "[parent]";
 
     for (int i = 0; i < qtd; i++){
@@ -35,7 +35,7 @@ int main(int argc, char **argv){
             cout << tag << "euid:" << euid << endl;
             _exit(-1 -1 * pid);
         } else {
-            cout << "just created child " << pid << endl;
+            cout << tag << "just created child " << pid << endl;
         }
     }
 
