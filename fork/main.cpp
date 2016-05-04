@@ -41,8 +41,8 @@ int main(int argc, char **argv){
 
     int status;
     for (int i = 0; i < qtd; i++){
-        wait(&status);
-        cout << "received exit signal from child " << -1*status -1 << endl;
+        int child_pid = wait(&status);
+        cout << "received exit signal from child " << child_pid << endl;
 
     }
     // playing with primitives

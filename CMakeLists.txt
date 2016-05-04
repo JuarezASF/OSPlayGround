@@ -10,3 +10,7 @@ add_executable(fork_sample fork/main.cpp)
 
 add_executable(exec_sample0 exec/p0.cpp)
 add_executable(exec_sample1 exec/p1.cpp)
+
+add_executable(pipe_sample pipe/main.cpp)
+
+add_executable(msg_queue_sample msg_queue/main.cpp)
